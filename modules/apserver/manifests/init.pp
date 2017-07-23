@@ -19,14 +19,14 @@ class apserver {
 		recurse => true,
 		owner => root,
 		group => root,
-		source => "puppet:///modules/apache/html/",
+		source => "puppet:///modules/apserver/html/",
 		mode => 0644,
 	} 
 
    file { "apache2.conf":
 		ensure => present,
 		path => "/etc/apache2/apache2.conf",
- 		source => "puppet:///modules/apache/apache2.conf",
+ 		source => "puppet:///modules/apserver/apache2.conf",
 		mode => 0640,
 		owner => root,
 		group => root,
