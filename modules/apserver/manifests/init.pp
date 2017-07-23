@@ -23,7 +23,7 @@ class apserver {
 		mode => 0644,
 	} 
 
-	file { "apache2.conf":
+   file { "apache2.conf":
 		ensure => present,
 		path => "/etc/apache2/apache2.conf",
  		source => "puppet:///modules/apache/apache2.conf",
