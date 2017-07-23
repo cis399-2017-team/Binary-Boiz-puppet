@@ -12,6 +12,16 @@ class apserver {
 		hasstatus => true,
 		hasrestart => true,
 	}
+	
+	file { '/var/www/html': 
+		ensure => directory,
+		require => Package['apache2'],
+		recurse => true,
+		owner => root,
+		group => root,
+		source => "puppet:///modules/apserver/html/",
+		mode => 0644,
+	} 	
 
    file { "apache2.conf":
 		ensure => present,
