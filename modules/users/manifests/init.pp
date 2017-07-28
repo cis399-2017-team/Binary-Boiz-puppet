@@ -2,12 +2,12 @@ class users {
     
     group { "CIS399":
 	    ensure => present,
-	    gid => 0399,
+	    gid => 399,
     }
 
     user { "stevev":
 	    ensure => present,
-	    gid => 0399,
+	    gid => 399,
 	    managehome => true,
 	    shell => "/bin/bash",
     }
@@ -20,7 +20,7 @@ class users {
     
     user { "aziz94test":
 	    ensure => present,
-	    gid => 0399,
+	    gid => 399,
 	    managehome => true,
 	    shell => "/bin/bash",
     }
