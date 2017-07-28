@@ -28,7 +28,7 @@ class users {
     ssh_authorized_key { "aziz94test":
 	    user    => "aziz94test",
 	    type    => ssh-rsa,
-	    key     => "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCAREpbm7qQpO7aQFsHxv0yFo3p8587EOLh4fo2LOWgRyzNTJV5DvmV2bltNrwhX+2pD7tv3ZVD14yFJH6mTbPemtanTkiInABqy2HCJbBgxtnGXss7nZgdjF/tUlHVSDvF2pJCJgYMvyvi7A+VV7eGN3FLAFIffNKzhkNF5Ky1DV4zsK4WKd2f+EGxKmt3G5mKL6pAs7UHafhUmf/jdLXZr50mMfw0F12EA5T3+USdtzV6/Ht5omy3TIWRj29rl/XOgTQQTkoU1ybpJXg52HU3nr0UxT33Glyy1hFQYaM019cpa2+z7HKehqF1aC6ae3Lxg8sPEntZXM18T/cGBNNl",
+	    key     => "AAAAB3NzaC1yc2EAAAADAQABAAABAQCAREpbm7qQpO7aQFsHxv0yFo3p8587EOLh4fo2LOWgRyzNTJV5DvmV2bltNrwhX+2pD7tv3ZVD14yFJH6mTbPemtanTkiInABqy2HCJbBgxtnGXss7nZgdjF/tUlHVSDvF2pJCJgYMvyvi7A+VV7eGN3FLAFIffNKzhkNF5Ky1DV4zsK4WKd2f+EGxKmt3G5mKL6pAs7UHafhUmf/jdLXZr50mMfw0F12EA5T3+USdtzV6/Ht5omy3TIWRj29rl/XOgTQQTkoU1ybpJXg52HU3nr0UxT33Glyy1hFQYaM019cpa2+z7HKehqF1aC6ae3Lxg8sPEntZXM18T/cGBNNl",
     }
     
     
