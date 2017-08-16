@@ -17,12 +17,6 @@ class paperwork {
 		require => Package["nginx"],
 	}
 
-	service { "mysql":
-		ensure => "running",
-		enable => "true",
-		require => Package["mysql-server"],
-	}
-
 	file { "/etc/nginx/sites-available/default":
 		notify => Service["nginx"],
 		ensure => "present",
