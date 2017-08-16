@@ -10,11 +10,5 @@ class paperwork {
 	package { $packages:
 	   ensure => "installed"
 	}
-	
-	service { "nginx":
-		ensure => "running",
-		enable => "true",
-		require => Package["nginx"],
-	}
 
 }
