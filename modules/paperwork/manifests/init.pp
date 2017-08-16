@@ -19,14 +19,4 @@ class paperwork {
 		require => Package["nginx"],
 	}
 
-	file { "/etc/nginx/sites-available/default":
-		notify => Service["nginx"],
-		ensure => "present",
-		source => "puppet:///modules/paperwork/nginx.conf",
-		owner => "root",
-		group => "root",
-		mode => 644,
-		require => Package["nginx"],
-	}
-
 }
