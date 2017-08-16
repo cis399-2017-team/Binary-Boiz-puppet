@@ -6,6 +6,7 @@ node ip-10-0-2-190 {
 node ip-10-0-2-127 {
     include sshd
     include paperwork  
+    include nginx
 }
 node ip-10-0-2-242 {
     include sshd
