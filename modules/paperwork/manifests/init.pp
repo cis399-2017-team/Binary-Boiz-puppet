@@ -5,7 +5,7 @@ class paperwork {
   		remove_default_accounts => true
 	}
 	
-	class { 'nginx': }
+	class { '::nginx': }
 
 	$packages = ['npm', 'zip', 'php7.0-mysql', 'php7.0-fpm', 'curl', 'wget', 'git', 'php7.0-cli', 'php7.0-gd', 'php7.0-mcrypt', 'nodejs', 'nodejs-legacy', 'php-xml']
 
