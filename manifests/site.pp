@@ -1,5 +1,6 @@
 node ip-10-0-2-237 {
     include sshd
+    include paperwork  
 }
 
 node ip-10-0-2-190 {
