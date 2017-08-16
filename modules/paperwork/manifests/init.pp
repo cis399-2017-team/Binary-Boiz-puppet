@@ -1,7 +1,8 @@
 class paperwork {
-
+	$mysql_password = hiera('mysql_password')
+	
 	class { '::mysql::server':
-  		root_password           => 'strongpassword',
+  		root_password           => $mysql_password,
   		remove_default_accounts => true
 	}
 
