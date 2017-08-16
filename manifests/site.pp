@@ -1,3 +1,7 @@
+node ip-10-0-2-237 {
+    include sshd
+}
+
 node ip-10-0-2-190 {
     include sshd
     include apserver
