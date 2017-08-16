@@ -5,7 +5,7 @@ class paperwork {
   		remove_default_accounts => true
 	}
 
-	$packages = ['npm', 'zip', 'mysql-server', 'php7.0-mysql', 'nginx', 'php7.0-fpm', 'curl', 'wget', 'git', 'php7.0-cli', 'php7.0-gd', 'php7.0-mcrypt', 'nodejs', 'nodejs-legacy', 'php-xml']
+	$packages = ['npm', 'zip', 'php7.0-mysql', 'nginx', 'php7.0-fpm', 'curl', 'wget', 'git', 'php7.0-cli', 'php7.0-gd', 'php7.0-mcrypt', 'nodejs', 'nodejs-legacy', 'php-xml']
 
 	package { $packages:
 	   ensure => "installed"
